@@ -1,0 +1,17 @@
+#include<graphics.h>
+#include<conio.h>
+
+int main(){
+	int gd = DETECT, gm;
+	initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
+
+	settextstyle(DEFAULT_FONT, HORIZ_DIR, 10);
+	outtextxy(100, 100, "P");
+
+	settextstyle(DEFAULT_FONT, HORIZ_DIR, 5);
+	outtextxy(100, 200, " rakash");
+
+	getch();
+	closegraph();
+	return 0;
+}
